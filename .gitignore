@@ -1,7 +1,8 @@
-build
-dist
-json_database.egg-info
+/build
+/dist
 /venv
-antlr-*.jar
+*.egg-info
+*.pyc
 
 /.idea
+*.jar
