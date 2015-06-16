@@ -85,3 +85,39 @@ class DatabaseListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by DatabaseParser#value.
+    def enterValue(self, ctx):
+        pass
+
+    # Exit a parse tree produced by DatabaseParser#value.
+    def exitValue(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by DatabaseParser#string.
+    def enterString(self, ctx):
+        pass
+
+    # Exit a parse tree produced by DatabaseParser#string.
+    def exitString(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by DatabaseParser#number.
+    def enterNumber(self, ctx):
+        pass
+
+    # Exit a parse tree produced by DatabaseParser#number.
+    def exitNumber(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by DatabaseParser#boolean.
+    def enterBoolean(self, ctx):
+        pass
+
+    # Exit a parse tree produced by DatabaseParser#boolean.
+    def exitBoolean(self, ctx):
+        pass
+
+

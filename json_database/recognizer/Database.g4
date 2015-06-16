@@ -1,7 +1,10 @@
 grammar Database;
+options {
+    language = Python;
+}
 
 commands
-    :   (command ';')+
+    :   (command ';')* command
     ;
 
 command
@@ -14,19 +17,19 @@ command
     ;
 
 selectStatement
-    :   ((NAME ',') NAME | '*') 'FROM' NAME ('WHERE' where)?
+    :   ((NAME ',')* NAME | '*') 'FROM' NAME ('WHERE' where)?
     ;
 
 createStatement
-    :   'TABLE' NAME 'VALUES' '(' (NAME TYPE ',')* NAME TYPE ')'
+    :   'TABLE' NAME 'VALUES' '(' (NAME ',')* NAME ')'
     ;
 
 insertStatement
-    :   'INTO' NAME 'SET' (NAME '=' VALUE ',')* NAME '=' VALUE
+    :   'INTO' NAME 'SET' (NAME '=' value ',')* NAME '=' value
     ;
 
 updateStatement
-    :   NAME 'SET' (NAME '=' VALUE ',')* NAME '=' VALUE ('WHERE' where)?
+    :   NAME 'SET' (NAME '=' value ',')* NAME '=' value ('WHERE' where)?
     ;
 
 deleteStatement
@@ -38,20 +41,25 @@ dropStatement
     ;
 
 where
-    :   NAME '=' VALUE (('AND' | 'OR') where)*
+    :   NAME '=' value (('AND' | 'OR') where)*
     ;
 
 NAME
-    :   [0-9a-zA-Z$_]+
+    :   [a-zA-Z] ([0-9a-zA-Z$_])+
     ;
 
-VALUE
-    :   STRING
-    |   NUMBER
+value
+    :   number
+    |   boolean
+    |   string
     ;
 
-STRING
-    :   '"' .*? '"'
+string
+    :   '"' ~'"' '"'
+    ;
+
+number
+    : NUMBER
     ;
 
 NUMBER
@@ -59,11 +67,9 @@ NUMBER
     |   '0' ('.' [0-9]+)?
     ;
 
-TYPE
-    :   'int'
-    |   'float'
-    |   'varchar'
-    |   'boolean'
+boolean
+    : 'true'
+    | 'false'
     ;
 
 LINE_COMMENT
@@ -77,4 +83,3 @@ BLOCK_COMMENT
 WS
     : [ \t\n\r]+ -> skip
     ;
-
