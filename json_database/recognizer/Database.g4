@@ -1,7 +1,4 @@
 grammar Database;
-options {
-    language = Python;
-}
 
 commands
     :   (command ';')* command
@@ -17,31 +14,45 @@ command
     ;
 
 selectStatement
-    :   ((NAME ',')* NAME | '*') 'FROM' NAME ('WHERE' where)?
+    :   ((columnName ',')* columnName | '*') 'FROM' tableName ('WHERE' where)?
     ;
 
 createStatement
-    :   'TABLE' NAME 'VALUES' '(' (NAME ',')* NAME ')'
+    :   'TABLE' tableName
     ;
 
 insertStatement
-    :   'INTO' NAME 'SET' (NAME '=' value ',')* NAME '=' value
+    :   'INTO' tableName 'SET' (columnName '=' value ',')* columnName '=' value
     ;
 
 updateStatement
-    :   NAME 'SET' (NAME '=' value ',')* NAME '=' value ('WHERE' where)?
+    :   tableName 'SET' (columnName '=' value ',')* columnName '=' value ('WHERE' where)?
     ;
 
 deleteStatement
-    :   'FROM' NAME ('WHERE' where)?
+    :   'FROM' tableName ('WHERE' where)?
     ;
 
 dropStatement
-    :   'TABLE' (NAME ',')* NAME
+    :   'TABLE' (tableName ',')* tableName
     ;
 
 where
-    :   NAME '=' value (('AND' | 'OR') where)*
+    :   whereAND 'OR' where
+    |   whereAND
+    ;
+
+whereAND
+    :   columnName '=' value 'AND' whereAND
+    |   columnName '=' value
+    ;
+
+tableName
+    :   NAME
+    ;
+
+columnName
+    :   NAME
     ;
 
 NAME

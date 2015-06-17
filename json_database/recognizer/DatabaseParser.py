@@ -12,62 +12,66 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write(u"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3")
-        buf.write(u"\36\u009f\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7")
+        buf.write(u"\33\u00a9\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7")
         buf.write(u"\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t")
-        buf.write(u"\r\4\16\t\16\3\2\3\2\3\2\7\2 \n\2\f\2\16\2#\13\2\3\2")
-        buf.write(u"\3\2\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3")
-        buf.write(u"\5\3\63\n\3\3\4\3\4\7\4\67\n\4\f\4\16\4:\13\4\3\4\3\4")
-        buf.write(u"\5\4>\n\4\3\4\3\4\3\4\3\4\5\4D\n\4\3\5\3\5\3\5\3\5\3")
-        buf.write(u"\5\3\5\7\5L\n\5\f\5\16\5O\13\5\3\5\3\5\3\5\3\6\3\6\3")
-        buf.write(u"\6\3\6\3\6\3\6\3\6\3\6\7\6\\\n\6\f\6\16\6_\13\6\3\6\3")
-        buf.write(u"\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\7\3\7\7\7l\n\7\f\7\16")
-        buf.write(u"\7o\13\7\3\7\3\7\3\7\3\7\3\7\5\7v\n\7\3\b\3\b\3\b\3\b")
-        buf.write(u"\5\b|\n\b\3\t\3\t\3\t\7\t\u0081\n\t\f\t\16\t\u0084\13")
-        buf.write(u"\t\3\t\3\t\3\n\3\n\3\n\3\n\3\n\7\n\u008d\n\n\f\n\16\n")
-        buf.write(u"\u0090\13\n\3\13\3\13\3\13\5\13\u0095\n\13\3\f\3\f\3")
-        buf.write(u"\f\3\f\3\r\3\r\3\16\3\16\3\16\2\2\17\2\4\6\b\n\f\16\20")
-        buf.write(u"\22\24\26\30\32\2\5\3\2\25\26\3\2\27\27\3\2\30\31\u00a3")
-        buf.write(u"\2!\3\2\2\2\4\62\3\2\2\2\6=\3\2\2\2\bE\3\2\2\2\nS\3\2")
-        buf.write(u"\2\2\fd\3\2\2\2\16w\3\2\2\2\20}\3\2\2\2\22\u0087\3\2")
-        buf.write(u"\2\2\24\u0094\3\2\2\2\26\u0096\3\2\2\2\30\u009a\3\2\2")
-        buf.write(u"\2\32\u009c\3\2\2\2\34\35\5\4\3\2\35\36\7\3\2\2\36 \3")
-        buf.write(u"\2\2\2\37\34\3\2\2\2 #\3\2\2\2!\37\3\2\2\2!\"\3\2\2\2")
-        buf.write(u"\"$\3\2\2\2#!\3\2\2\2$%\5\4\3\2%\3\3\2\2\2&\'\7\4\2\2")
-        buf.write(u"\'\63\5\6\4\2()\7\5\2\2)\63\5\b\5\2*+\7\6\2\2+\63\5\n")
-        buf.write(u"\6\2,-\7\7\2\2-\63\5\f\7\2./\7\b\2\2/\63\5\16\b\2\60")
-        buf.write(u"\61\7\t\2\2\61\63\5\20\t\2\62&\3\2\2\2\62(\3\2\2\2\62")
-        buf.write(u"*\3\2\2\2\62,\3\2\2\2\62.\3\2\2\2\62\60\3\2\2\2\63\5")
-        buf.write(u"\3\2\2\2\64\65\7\32\2\2\65\67\7\n\2\2\66\64\3\2\2\2\67")
-        buf.write(u":\3\2\2\28\66\3\2\2\289\3\2\2\29;\3\2\2\2:8\3\2\2\2;")
-        buf.write(u">\7\32\2\2<>\7\13\2\2=8\3\2\2\2=<\3\2\2\2>?\3\2\2\2?")
-        buf.write(u"@\7\f\2\2@C\7\32\2\2AB\7\r\2\2BD\5\22\n\2CA\3\2\2\2C")
-        buf.write(u"D\3\2\2\2D\7\3\2\2\2EF\7\16\2\2FG\7\32\2\2GH\7\17\2\2")
-        buf.write(u"HM\7\20\2\2IJ\7\32\2\2JL\7\n\2\2KI\3\2\2\2LO\3\2\2\2")
-        buf.write(u"MK\3\2\2\2MN\3\2\2\2NP\3\2\2\2OM\3\2\2\2PQ\7\32\2\2Q")
-        buf.write(u"R\7\21\2\2R\t\3\2\2\2ST\7\22\2\2TU\7\32\2\2U]\7\23\2")
-        buf.write(u"\2VW\7\32\2\2WX\7\24\2\2XY\5\24\13\2YZ\7\n\2\2Z\\\3\2")
-        buf.write(u"\2\2[V\3\2\2\2\\_\3\2\2\2][\3\2\2\2]^\3\2\2\2^`\3\2\2")
-        buf.write(u"\2_]\3\2\2\2`a\7\32\2\2ab\7\24\2\2bc\5\24\13\2c\13\3")
-        buf.write(u"\2\2\2de\7\32\2\2em\7\23\2\2fg\7\32\2\2gh\7\24\2\2hi")
-        buf.write(u"\5\24\13\2ij\7\n\2\2jl\3\2\2\2kf\3\2\2\2lo\3\2\2\2mk")
-        buf.write(u"\3\2\2\2mn\3\2\2\2np\3\2\2\2om\3\2\2\2pq\7\32\2\2qr\7")
-        buf.write(u"\24\2\2ru\5\24\13\2st\7\r\2\2tv\5\22\n\2us\3\2\2\2uv")
-        buf.write(u"\3\2\2\2v\r\3\2\2\2wx\7\f\2\2x{\7\32\2\2yz\7\r\2\2z|")
-        buf.write(u"\5\22\n\2{y\3\2\2\2{|\3\2\2\2|\17\3\2\2\2}\u0082\7\16")
-        buf.write(u"\2\2~\177\7\32\2\2\177\u0081\7\n\2\2\u0080~\3\2\2\2\u0081")
-        buf.write(u"\u0084\3\2\2\2\u0082\u0080\3\2\2\2\u0082\u0083\3\2\2")
-        buf.write(u"\2\u0083\u0085\3\2\2\2\u0084\u0082\3\2\2\2\u0085\u0086")
-        buf.write(u"\7\32\2\2\u0086\21\3\2\2\2\u0087\u0088\7\32\2\2\u0088")
-        buf.write(u"\u0089\7\24\2\2\u0089\u008e\5\24\13\2\u008a\u008b\t\2")
-        buf.write(u"\2\2\u008b\u008d\5\22\n\2\u008c\u008a\3\2\2\2\u008d\u0090")
-        buf.write(u"\3\2\2\2\u008e\u008c\3\2\2\2\u008e\u008f\3\2\2\2\u008f")
-        buf.write(u"\23\3\2\2\2\u0090\u008e\3\2\2\2\u0091\u0095\5\30\r\2")
-        buf.write(u"\u0092\u0095\5\32\16\2\u0093\u0095\5\26\f\2\u0094\u0091")
-        buf.write(u"\3\2\2\2\u0094\u0092\3\2\2\2\u0094\u0093\3\2\2\2\u0095")
-        buf.write(u"\25\3\2\2\2\u0096\u0097\7\27\2\2\u0097\u0098\n\3\2\2")
-        buf.write(u"\u0098\u0099\7\27\2\2\u0099\27\3\2\2\2\u009a\u009b\7")
-        buf.write(u"\33\2\2\u009b\31\3\2\2\2\u009c\u009d\t\4\2\2\u009d\33")
-        buf.write(u"\3\2\2\2\17!\628=CM]mu{\u0082\u008e\u0094")
+        buf.write(u"\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\3\2\3\2\3")
+        buf.write(u"\2\7\2&\n\2\f\2\16\2)\13\2\3\2\3\2\3\3\3\3\3\3\3\3\3")
+        buf.write(u"\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\5\39\n\3\3\4\3\4\3\4\7")
+        buf.write(u"\4>\n\4\f\4\16\4A\13\4\3\4\3\4\5\4E\n\4\3\4\3\4\3\4\3")
+        buf.write(u"\4\5\4K\n\4\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3")
+        buf.write(u"\6\7\6X\n\6\f\6\16\6[\13\6\3\6\3\6\3\6\3\6\3\7\3\7\3")
+        buf.write(u"\7\3\7\3\7\3\7\3\7\7\7h\n\7\f\7\16\7k\13\7\3\7\3\7\3")
+        buf.write(u"\7\3\7\3\7\5\7r\n\7\3\b\3\b\3\b\3\b\5\bx\n\b\3\t\3\t")
+        buf.write(u"\3\t\3\t\7\t~\n\t\f\t\16\t\u0081\13\t\3\t\3\t\3\n\3\n")
+        buf.write(u"\3\n\3\n\3\n\5\n\u008a\n\n\3\13\3\13\3\13\3\13\3\13\3")
+        buf.write(u"\13\3\13\3\13\3\13\3\13\5\13\u0096\n\13\3\f\3\f\3\r\3")
+        buf.write(u"\r\3\16\3\16\3\16\5\16\u009f\n\16\3\17\3\17\3\17\3\17")
+        buf.write(u"\3\20\3\20\3\21\3\21\3\21\2\2\22\2\4\6\b\n\f\16\20\22")
+        buf.write(u"\24\26\30\32\34\36 \2\4\3\2\24\24\3\2\25\26\u00aa\2\'")
+        buf.write(u"\3\2\2\2\48\3\2\2\2\6D\3\2\2\2\bL\3\2\2\2\nO\3\2\2\2")
+        buf.write(u"\f`\3\2\2\2\16s\3\2\2\2\20y\3\2\2\2\22\u0089\3\2\2\2")
+        buf.write(u"\24\u0095\3\2\2\2\26\u0097\3\2\2\2\30\u0099\3\2\2\2\32")
+        buf.write(u"\u009e\3\2\2\2\34\u00a0\3\2\2\2\36\u00a4\3\2\2\2 \u00a6")
+        buf.write(u"\3\2\2\2\"#\5\4\3\2#$\7\3\2\2$&\3\2\2\2%\"\3\2\2\2&)")
+        buf.write(u"\3\2\2\2\'%\3\2\2\2\'(\3\2\2\2(*\3\2\2\2)\'\3\2\2\2*")
+        buf.write(u"+\5\4\3\2+\3\3\2\2\2,-\7\4\2\2-9\5\6\4\2./\7\5\2\2/9")
+        buf.write(u"\5\b\5\2\60\61\7\6\2\2\619\5\n\6\2\62\63\7\7\2\2\639")
+        buf.write(u"\5\f\7\2\64\65\7\b\2\2\659\5\16\b\2\66\67\7\t\2\2\67")
+        buf.write(u"9\5\20\t\28,\3\2\2\28.\3\2\2\28\60\3\2\2\28\62\3\2\2")
+        buf.write(u"\28\64\3\2\2\28\66\3\2\2\29\5\3\2\2\2:;\5\30\r\2;<\7")
+        buf.write(u"\n\2\2<>\3\2\2\2=:\3\2\2\2>A\3\2\2\2?=\3\2\2\2?@\3\2")
+        buf.write(u"\2\2@B\3\2\2\2A?\3\2\2\2BE\5\30\r\2CE\7\13\2\2D?\3\2")
+        buf.write(u"\2\2DC\3\2\2\2EF\3\2\2\2FG\7\f\2\2GJ\5\26\f\2HI\7\r\2")
+        buf.write(u"\2IK\5\22\n\2JH\3\2\2\2JK\3\2\2\2K\7\3\2\2\2LM\7\16\2")
+        buf.write(u"\2MN\5\26\f\2N\t\3\2\2\2OP\7\17\2\2PQ\5\26\f\2QY\7\20")
+        buf.write(u"\2\2RS\5\30\r\2ST\7\21\2\2TU\5\32\16\2UV\7\n\2\2VX\3")
+        buf.write(u"\2\2\2WR\3\2\2\2X[\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\\\3\2")
+        buf.write(u"\2\2[Y\3\2\2\2\\]\5\30\r\2]^\7\21\2\2^_\5\32\16\2_\13")
+        buf.write(u"\3\2\2\2`a\5\26\f\2ai\7\20\2\2bc\5\30\r\2cd\7\21\2\2")
+        buf.write(u"de\5\32\16\2ef\7\n\2\2fh\3\2\2\2gb\3\2\2\2hk\3\2\2\2")
+        buf.write(u"ig\3\2\2\2ij\3\2\2\2jl\3\2\2\2ki\3\2\2\2lm\5\30\r\2m")
+        buf.write(u"n\7\21\2\2nq\5\32\16\2op\7\r\2\2pr\5\22\n\2qo\3\2\2\2")
+        buf.write(u"qr\3\2\2\2r\r\3\2\2\2st\7\f\2\2tw\5\26\f\2uv\7\r\2\2")
+        buf.write(u"vx\5\22\n\2wu\3\2\2\2wx\3\2\2\2x\17\3\2\2\2y\177\7\16")
+        buf.write(u"\2\2z{\5\26\f\2{|\7\n\2\2|~\3\2\2\2}z\3\2\2\2~\u0081")
+        buf.write(u"\3\2\2\2\177}\3\2\2\2\177\u0080\3\2\2\2\u0080\u0082\3")
+        buf.write(u"\2\2\2\u0081\177\3\2\2\2\u0082\u0083\5\26\f\2\u0083\21")
+        buf.write(u"\3\2\2\2\u0084\u0085\5\24\13\2\u0085\u0086\7\22\2\2\u0086")
+        buf.write(u"\u0087\5\22\n\2\u0087\u008a\3\2\2\2\u0088\u008a\5\24")
+        buf.write(u"\13\2\u0089\u0084\3\2\2\2\u0089\u0088\3\2\2\2\u008a\23")
+        buf.write(u"\3\2\2\2\u008b\u008c\5\30\r\2\u008c\u008d\7\21\2\2\u008d")
+        buf.write(u"\u008e\5\32\16\2\u008e\u008f\7\23\2\2\u008f\u0090\5\24")
+        buf.write(u"\13\2\u0090\u0096\3\2\2\2\u0091\u0092\5\30\r\2\u0092")
+        buf.write(u"\u0093\7\21\2\2\u0093\u0094\5\32\16\2\u0094\u0096\3\2")
+        buf.write(u"\2\2\u0095\u008b\3\2\2\2\u0095\u0091\3\2\2\2\u0096\25")
+        buf.write(u"\3\2\2\2\u0097\u0098\7\27\2\2\u0098\27\3\2\2\2\u0099")
+        buf.write(u"\u009a\7\27\2\2\u009a\31\3\2\2\2\u009b\u009f\5\36\20")
+        buf.write(u"\2\u009c\u009f\5 \21\2\u009d\u009f\5\34\17\2\u009e\u009b")
+        buf.write(u"\3\2\2\2\u009e\u009c\3\2\2\2\u009e\u009d\3\2\2\2\u009f")
+        buf.write(u"\33\3\2\2\2\u00a0\u00a1\7\24\2\2\u00a1\u00a2\n\2\2\2")
+        buf.write(u"\u00a2\u00a3\7\24\2\2\u00a3\35\3\2\2\2\u00a4\u00a5\7")
+        buf.write(u"\30\2\2\u00a5\37\3\2\2\2\u00a6\u00a7\t\3\2\2\u00a7!\3")
+        buf.write(u"\2\2\2\17\'8?DJYiqw\177\u0089\u0095\u009e")
         return buf.getvalue()
 		
 
@@ -83,18 +87,16 @@ class DatabaseParser ( Parser ):
 
     literalNames = [ u"<INVALID>", u"';'", u"'SELECT'", u"'CREATE'", u"'INSERT'", 
                      u"'UPDATE'", u"'DELETE'", u"'DROP'", u"','", u"'*'", 
-                     u"'FROM'", u"'WHERE'", u"'TABLE'", u"'VALUES'", u"'('", 
-                     u"')'", u"'INTO'", u"'SET'", u"'='", u"'AND'", u"'OR'", 
-                     u"'\"'", u"'true'", u"'false'" ]
+                     u"'FROM'", u"'WHERE'", u"'TABLE'", u"'INTO'", u"'SET'", 
+                     u"'='", u"'OR'", u"'AND'", u"'\"'", u"'true'", u"'false'" ]
 
     symbolicNames = [ u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
                       u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
                       u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
                       u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
                       u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"NAME", u"NUMBER", u"LINE_COMMENT", u"BLOCK_COMMENT", 
-                      u"WS" ]
+                      u"<INVALID>", u"NAME", u"NUMBER", u"LINE_COMMENT", 
+                      u"BLOCK_COMMENT", u"WS" ]
 
     RULE_commands = 0
     RULE_command = 1
@@ -105,15 +107,18 @@ class DatabaseParser ( Parser ):
     RULE_deleteStatement = 6
     RULE_dropStatement = 7
     RULE_where = 8
-    RULE_value = 9
-    RULE_string = 10
-    RULE_number = 11
-    RULE_boolean = 12
+    RULE_whereAND = 9
+    RULE_tableName = 10
+    RULE_columnName = 11
+    RULE_value = 12
+    RULE_string = 13
+    RULE_number = 14
+    RULE_boolean = 15
 
     ruleNames =  [ u"commands", u"command", u"selectStatement", u"createStatement", 
                    u"insertStatement", u"updateStatement", u"deleteStatement", 
-                   u"dropStatement", u"where", u"value", u"string", u"number", 
-                   u"boolean" ]
+                   u"dropStatement", u"where", u"whereAND", u"tableName", 
+                   u"columnName", u"value", u"string", u"number", u"boolean" ]
 
     EOF = Token.EOF
     T__0=1
@@ -136,14 +141,11 @@ class DatabaseParser ( Parser ):
     T__17=18
     T__18=19
     T__19=20
-    T__20=21
-    T__21=22
-    T__22=23
-    NAME=24
-    NUMBER=25
-    LINE_COMMENT=26
-    BLOCK_COMMENT=27
-    WS=28
+    NAME=21
+    NUMBER=22
+    LINE_COMMENT=23
+    BLOCK_COMMENT=24
+    WS=25
 
     def __init__(self, input):
         super(DatabaseParser, self).__init__(input)
@@ -186,20 +188,20 @@ class DatabaseParser ( Parser ):
         self.enterRule(localctx, 0, self.RULE_commands)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 31
+            self.state = 37
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,0,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 26 
+                    self.state = 32 
                     self.command()
-                    self.state = 27
+                    self.state = 33
                     self.match(DatabaseParser.T__0) 
-                self.state = 33
+                self.state = 39
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,0,self._ctx)
 
-            self.state = 34 
+            self.state = 40 
             self.command()
         except RecognitionException as re:
             localctx.exception = re
@@ -258,48 +260,48 @@ class DatabaseParser ( Parser ):
         localctx = DatabaseParser.CommandContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_command)
         try:
-            self.state = 48
+            self.state = 54
             token = self._input.LA(1)
             if token in [DatabaseParser.T__1]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 36
+                self.state = 42
                 self.match(DatabaseParser.T__1)
-                self.state = 37 
+                self.state = 43 
                 self.selectStatement()
 
             elif token in [DatabaseParser.T__2]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 38
+                self.state = 44
                 self.match(DatabaseParser.T__2)
-                self.state = 39 
+                self.state = 45 
                 self.createStatement()
 
             elif token in [DatabaseParser.T__3]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 40
+                self.state = 46
                 self.match(DatabaseParser.T__3)
-                self.state = 41 
+                self.state = 47 
                 self.insertStatement()
 
             elif token in [DatabaseParser.T__4]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 42
+                self.state = 48
                 self.match(DatabaseParser.T__4)
-                self.state = 43 
+                self.state = 49 
                 self.updateStatement()
 
             elif token in [DatabaseParser.T__5]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 44
+                self.state = 50
                 self.match(DatabaseParser.T__5)
-                self.state = 45 
+                self.state = 51 
                 self.deleteStatement()
 
             elif token in [DatabaseParser.T__6]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 46
+                self.state = 52
                 self.match(DatabaseParser.T__6)
-                self.state = 47 
+                self.state = 53 
                 self.dropStatement()
 
             else:
@@ -319,11 +321,16 @@ class DatabaseParser ( Parser ):
             super(DatabaseParser.SelectStatementContext, self).__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self, i=None):
+        def tableName(self):
+            return self.getTypedRuleContext(DatabaseParser.TableNameContext,0)
+
+
+        def columnName(self, i=None):
             if i is None:
-                return self.getTokens(DatabaseParser.NAME)
+                return self.getTypedRuleContexts(DatabaseParser.ColumnNameContext)
             else:
-                return self.getToken(DatabaseParser.NAME, i)
+                return self.getTypedRuleContext(DatabaseParser.ColumnNameContext,i)
+
 
         def where(self):
             return self.getTypedRuleContext(DatabaseParser.WhereContext,0)
@@ -350,42 +357,42 @@ class DatabaseParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 59
+            self.state = 66
             token = self._input.LA(1)
             if token in [DatabaseParser.NAME]:
-                self.state = 54
+                self.state = 61
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,2,self._ctx)
                 while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                     if _alt==1:
-                        self.state = 50
-                        self.match(DatabaseParser.NAME)
-                        self.state = 51
+                        self.state = 56 
+                        self.columnName()
+                        self.state = 57
                         self.match(DatabaseParser.T__7) 
-                    self.state = 56
+                    self.state = 63
                     self._errHandler.sync(self)
                     _alt = self._interp.adaptivePredict(self._input,2,self._ctx)
 
-                self.state = 57
-                self.match(DatabaseParser.NAME)
+                self.state = 64 
+                self.columnName()
 
             elif token in [DatabaseParser.T__8]:
-                self.state = 58
+                self.state = 65
                 self.match(DatabaseParser.T__8)
 
             else:
                 raise NoViableAltException(self)
 
-            self.state = 61
+            self.state = 68
             self.match(DatabaseParser.T__9)
-            self.state = 62
-            self.match(DatabaseParser.NAME)
-            self.state = 65
+            self.state = 69 
+            self.tableName()
+            self.state = 72
             _la = self._input.LA(1)
             if _la==DatabaseParser.T__10:
-                self.state = 63
+                self.state = 70
                 self.match(DatabaseParser.T__10)
-                self.state = 64 
+                self.state = 71 
                 self.where()
 
 
@@ -403,11 +410,9 @@ class DatabaseParser ( Parser ):
             super(DatabaseParser.CreateStatementContext, self).__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self, i=None):
-            if i is None:
-                return self.getTokens(DatabaseParser.NAME)
-            else:
-                return self.getToken(DatabaseParser.NAME, i)
+        def tableName(self):
+            return self.getTypedRuleContext(DatabaseParser.TableNameContext,0)
+
 
         def getRuleIndex(self):
             return DatabaseParser.RULE_createStatement
@@ -429,31 +434,10 @@ class DatabaseParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_createStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 67
+            self.state = 74
             self.match(DatabaseParser.T__11)
-            self.state = 68
-            self.match(DatabaseParser.NAME)
-            self.state = 69
-            self.match(DatabaseParser.T__12)
-            self.state = 70
-            self.match(DatabaseParser.T__13)
-            self.state = 75
-            self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    self.state = 71
-                    self.match(DatabaseParser.NAME)
-                    self.state = 72
-                    self.match(DatabaseParser.T__7) 
-                self.state = 77
-                self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
-
-            self.state = 78
-            self.match(DatabaseParser.NAME)
-            self.state = 79
-            self.match(DatabaseParser.T__14)
+            self.state = 75 
+            self.tableName()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -468,11 +452,16 @@ class DatabaseParser ( Parser ):
             super(DatabaseParser.InsertStatementContext, self).__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self, i=None):
+        def tableName(self):
+            return self.getTypedRuleContext(DatabaseParser.TableNameContext,0)
+
+
+        def columnName(self, i=None):
             if i is None:
-                return self.getTokens(DatabaseParser.NAME)
+                return self.getTypedRuleContexts(DatabaseParser.ColumnNameContext)
             else:
-                return self.getToken(DatabaseParser.NAME, i)
+                return self.getTypedRuleContext(DatabaseParser.ColumnNameContext,i)
+
 
         def value(self, i=None):
             if i is None:
@@ -501,34 +490,34 @@ class DatabaseParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_insertStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 81
-            self.match(DatabaseParser.T__15)
-            self.state = 82
-            self.match(DatabaseParser.NAME)
-            self.state = 83
-            self.match(DatabaseParser.T__16)
-            self.state = 91
+            self.state = 77
+            self.match(DatabaseParser.T__12)
+            self.state = 78 
+            self.tableName()
+            self.state = 79
+            self.match(DatabaseParser.T__13)
+            self.state = 87
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,6,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 84
-                    self.match(DatabaseParser.NAME)
-                    self.state = 85
-                    self.match(DatabaseParser.T__17)
-                    self.state = 86 
+                    self.state = 80 
+                    self.columnName()
+                    self.state = 81
+                    self.match(DatabaseParser.T__14)
+                    self.state = 82 
                     self.value()
-                    self.state = 87
+                    self.state = 83
                     self.match(DatabaseParser.T__7) 
-                self.state = 93
+                self.state = 89
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,6,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
 
-            self.state = 94
-            self.match(DatabaseParser.NAME)
-            self.state = 95
-            self.match(DatabaseParser.T__17)
-            self.state = 96 
+            self.state = 90 
+            self.columnName()
+            self.state = 91
+            self.match(DatabaseParser.T__14)
+            self.state = 92 
             self.value()
         except RecognitionException as re:
             localctx.exception = re
@@ -544,11 +533,16 @@ class DatabaseParser ( Parser ):
             super(DatabaseParser.UpdateStatementContext, self).__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self, i=None):
+        def tableName(self):
+            return self.getTypedRuleContext(DatabaseParser.TableNameContext,0)
+
+
+        def columnName(self, i=None):
             if i is None:
-                return self.getTokens(DatabaseParser.NAME)
+                return self.getTypedRuleContexts(DatabaseParser.ColumnNameContext)
             else:
-                return self.getToken(DatabaseParser.NAME, i)
+                return self.getTypedRuleContext(DatabaseParser.ColumnNameContext,i)
+
 
         def value(self, i=None):
             if i is None:
@@ -582,39 +576,39 @@ class DatabaseParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 98
-            self.match(DatabaseParser.NAME)
-            self.state = 99
-            self.match(DatabaseParser.T__16)
-            self.state = 107
+            self.state = 94 
+            self.tableName()
+            self.state = 95
+            self.match(DatabaseParser.T__13)
+            self.state = 103
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,7,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,6,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 100
-                    self.match(DatabaseParser.NAME)
-                    self.state = 101
-                    self.match(DatabaseParser.T__17)
-                    self.state = 102 
+                    self.state = 96 
+                    self.columnName()
+                    self.state = 97
+                    self.match(DatabaseParser.T__14)
+                    self.state = 98 
                     self.value()
-                    self.state = 103
+                    self.state = 99
                     self.match(DatabaseParser.T__7) 
-                self.state = 109
+                self.state = 105
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,7,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,6,self._ctx)
 
-            self.state = 110
-            self.match(DatabaseParser.NAME)
-            self.state = 111
-            self.match(DatabaseParser.T__17)
-            self.state = 112 
+            self.state = 106 
+            self.columnName()
+            self.state = 107
+            self.match(DatabaseParser.T__14)
+            self.state = 108 
             self.value()
-            self.state = 115
+            self.state = 111
             _la = self._input.LA(1)
             if _la==DatabaseParser.T__10:
-                self.state = 113
+                self.state = 109
                 self.match(DatabaseParser.T__10)
-                self.state = 114 
+                self.state = 110 
                 self.where()
 
 
@@ -632,8 +626,9 @@ class DatabaseParser ( Parser ):
             super(DatabaseParser.DeleteStatementContext, self).__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self):
-            return self.getToken(DatabaseParser.NAME, 0)
+        def tableName(self):
+            return self.getTypedRuleContext(DatabaseParser.TableNameContext,0)
+
 
         def where(self):
             return self.getTypedRuleContext(DatabaseParser.WhereContext,0)
@@ -660,16 +655,16 @@ class DatabaseParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 117
+            self.state = 113
             self.match(DatabaseParser.T__9)
-            self.state = 118
-            self.match(DatabaseParser.NAME)
-            self.state = 121
+            self.state = 114 
+            self.tableName()
+            self.state = 117
             _la = self._input.LA(1)
             if _la==DatabaseParser.T__10:
-                self.state = 119
+                self.state = 115
                 self.match(DatabaseParser.T__10)
-                self.state = 120 
+                self.state = 116 
                 self.where()
 
 
@@ -687,11 +682,12 @@ class DatabaseParser ( Parser ):
             super(DatabaseParser.DropStatementContext, self).__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self, i=None):
+        def tableName(self, i=None):
             if i is None:
-                return self.getTokens(DatabaseParser.NAME)
+                return self.getTypedRuleContexts(DatabaseParser.TableNameContext)
             else:
-                return self.getToken(DatabaseParser.NAME, i)
+                return self.getTypedRuleContext(DatabaseParser.TableNameContext,i)
+
 
         def getRuleIndex(self):
             return DatabaseParser.RULE_dropStatement
@@ -713,23 +709,23 @@ class DatabaseParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_dropStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 123
+            self.state = 119
             self.match(DatabaseParser.T__11)
-            self.state = 128
+            self.state = 125
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,10,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 124
-                    self.match(DatabaseParser.NAME)
-                    self.state = 125
+                    self.state = 120 
+                    self.tableName()
+                    self.state = 121
                     self.match(DatabaseParser.T__7) 
-                self.state = 130
+                self.state = 127
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,10,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
 
-            self.state = 131
-            self.match(DatabaseParser.NAME)
+            self.state = 128 
+            self.tableName()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -744,18 +740,12 @@ class DatabaseParser ( Parser ):
             super(DatabaseParser.WhereContext, self).__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self):
-            return self.getToken(DatabaseParser.NAME, 0)
-
-        def value(self):
-            return self.getTypedRuleContext(DatabaseParser.ValueContext,0)
+        def whereAND(self):
+            return self.getTypedRuleContext(DatabaseParser.WhereANDContext,0)
 
 
-        def where(self, i=None):
-            if i is None:
-                return self.getTypedRuleContexts(DatabaseParser.WhereContext)
-            else:
-                return self.getTypedRuleContext(DatabaseParser.WhereContext,i)
+        def where(self):
+            return self.getTypedRuleContext(DatabaseParser.WhereContext,0)
 
 
         def getRuleIndex(self):
@@ -776,31 +766,176 @@ class DatabaseParser ( Parser ):
 
         localctx = DatabaseParser.WhereContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_where)
-        self._la = 0 # Token type
+        try:
+            self.state = 135
+            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 130 
+                self.whereAND()
+                self.state = 131
+                self.match(DatabaseParser.T__15)
+                self.state = 132 
+                self.where()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 134 
+                self.whereAND()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+    class WhereANDContext(ParserRuleContext):
+
+        def __init__(self, parser, parent=None, invokingState=-1):
+            super(DatabaseParser.WhereANDContext, self).__init__(parent, invokingState)
+            self.parser = parser
+
+        def columnName(self):
+            return self.getTypedRuleContext(DatabaseParser.ColumnNameContext,0)
+
+
+        def value(self):
+            return self.getTypedRuleContext(DatabaseParser.ValueContext,0)
+
+
+        def whereAND(self):
+            return self.getTypedRuleContext(DatabaseParser.WhereANDContext,0)
+
+
+        def getRuleIndex(self):
+            return DatabaseParser.RULE_whereAND
+
+        def enterRule(self, listener):
+            if isinstance( listener, DatabaseListener ):
+                listener.enterWhereAND(self)
+
+        def exitRule(self, listener):
+            if isinstance( listener, DatabaseListener ):
+                listener.exitWhereAND(self)
+
+
+
+
+    def whereAND(self):
+
+        localctx = DatabaseParser.WhereANDContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 18, self.RULE_whereAND)
+        try:
+            self.state = 147
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 137 
+                self.columnName()
+                self.state = 138
+                self.match(DatabaseParser.T__14)
+                self.state = 139 
+                self.value()
+                self.state = 140
+                self.match(DatabaseParser.T__16)
+                self.state = 141 
+                self.whereAND()
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 143 
+                self.columnName()
+                self.state = 144
+                self.match(DatabaseParser.T__14)
+                self.state = 145 
+                self.value()
+                pass
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+    class TableNameContext(ParserRuleContext):
+
+        def __init__(self, parser, parent=None, invokingState=-1):
+            super(DatabaseParser.TableNameContext, self).__init__(parent, invokingState)
+            self.parser = parser
+
+        def NAME(self):
+            return self.getToken(DatabaseParser.NAME, 0)
+
+        def getRuleIndex(self):
+            return DatabaseParser.RULE_tableName
+
+        def enterRule(self, listener):
+            if isinstance( listener, DatabaseListener ):
+                listener.enterTableName(self)
+
+        def exitRule(self, listener):
+            if isinstance( listener, DatabaseListener ):
+                listener.exitTableName(self)
+
+
+
+
+    def tableName(self):
+
+        localctx = DatabaseParser.TableNameContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 20, self.RULE_tableName)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 133
+            self.state = 149
             self.match(DatabaseParser.NAME)
-            self.state = 134
-            self.match(DatabaseParser.T__17)
-            self.state = 135 
-            self.value()
-            self.state = 140
-            self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    self.state = 136
-                    _la = self._input.LA(1)
-                    if not(_la==DatabaseParser.T__18 or _la==DatabaseParser.T__19):
-                        self._errHandler.recoverInline(self)
-                    self.consume()
-                    self.state = 137 
-                    self.where() 
-                self.state = 142
-                self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
 
+    class ColumnNameContext(ParserRuleContext):
+
+        def __init__(self, parser, parent=None, invokingState=-1):
+            super(DatabaseParser.ColumnNameContext, self).__init__(parent, invokingState)
+            self.parser = parser
+
+        def NAME(self):
+            return self.getToken(DatabaseParser.NAME, 0)
+
+        def getRuleIndex(self):
+            return DatabaseParser.RULE_columnName
+
+        def enterRule(self, listener):
+            if isinstance( listener, DatabaseListener ):
+                listener.enterColumnName(self)
+
+        def exitRule(self, listener):
+            if isinstance( listener, DatabaseListener ):
+                listener.exitColumnName(self)
+
+
+
+
+    def columnName(self):
+
+        localctx = DatabaseParser.ColumnNameContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 22, self.RULE_columnName)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 151
+            self.match(DatabaseParser.NAME)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -844,23 +979,23 @@ class DatabaseParser ( Parser ):
     def value(self):
 
         localctx = DatabaseParser.ValueContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_value)
+        self.enterRule(localctx, 24, self.RULE_value)
         try:
-            self.state = 146
+            self.state = 156
             token = self._input.LA(1)
             if token in [DatabaseParser.NUMBER]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 143 
+                self.state = 153 
                 self.number()
 
-            elif token in [DatabaseParser.T__21, DatabaseParser.T__22]:
+            elif token in [DatabaseParser.T__18, DatabaseParser.T__19]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 144 
+                self.state = 154 
                 self.boolean()
 
-            elif token in [DatabaseParser.T__20]:
+            elif token in [DatabaseParser.T__17]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 145 
+                self.state = 155 
                 self.string()
 
             else:
@@ -898,19 +1033,19 @@ class DatabaseParser ( Parser ):
     def string(self):
 
         localctx = DatabaseParser.StringContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_string)
+        self.enterRule(localctx, 26, self.RULE_string)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 148
-            self.match(DatabaseParser.T__20)
-            self.state = 149
+            self.state = 158
+            self.match(DatabaseParser.T__17)
+            self.state = 159
             _la = self._input.LA(1)
-            if _la <= 0 or _la==DatabaseParser.T__20:
+            if _la <= 0 or _la==DatabaseParser.T__17:
                 self._errHandler.recoverInline(self)
             self.consume()
-            self.state = 150
-            self.match(DatabaseParser.T__20)
+            self.state = 160
+            self.match(DatabaseParser.T__17)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -945,10 +1080,10 @@ class DatabaseParser ( Parser ):
     def number(self):
 
         localctx = DatabaseParser.NumberContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_number)
+        self.enterRule(localctx, 28, self.RULE_number)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 152
+            self.state = 162
             self.match(DatabaseParser.NUMBER)
         except RecognitionException as re:
             localctx.exception = re
@@ -982,13 +1117,13 @@ class DatabaseParser ( Parser ):
     def boolean(self):
 
         localctx = DatabaseParser.BooleanContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_boolean)
+        self.enterRule(localctx, 30, self.RULE_boolean)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 154
+            self.state = 164
             _la = self._input.LA(1)
-            if not(_la==DatabaseParser.T__21 or _la==DatabaseParser.T__22):
+            if not(_la==DatabaseParser.T__18 or _la==DatabaseParser.T__19):
                 self._errHandler.recoverInline(self)
             self.consume()
         except RecognitionException as re:
