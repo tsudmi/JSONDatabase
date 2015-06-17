@@ -3,13 +3,14 @@
 from setuptools import setup, find_packages
 
 install_requires = [
-    'antlr4-python2-runtime==4.5'
+    'antlr4-python2-runtime==4.5',
+    'click==4.0'
 ]
 
 
 setup(
     name='json-database',
-    version='0.1.0',
+    version='0.2.0',
     author='Dmitri Chumak',
     author_email='tsudmi@ut.ee',
     url='https://github.com/tsudmi/json-database',
