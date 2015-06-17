@@ -41,9 +41,9 @@ class RecognizerTest(unittest.TestCase):
 
     def test_valid_create_commands_are_accepted(self):
         commands = [
-            'CREATE TABLE TableName VALUES (ColumnName1)',
-            'CREATE TABLE TableName VALUES (ColumnName1, ColumnName2, ColumnName3);'
-            'CREATE TABLE TableName VALUES (ColumnName1)',
+            'CREATE TABLE TableName',
+            'CREATE TABLE TableName;'
+            'CREATE TABLE TableName',
         ]
 
         for command in commands:
@@ -51,7 +51,7 @@ class RecognizerTest(unittest.TestCase):
 
     def test_invalid_create_commands_are_not_accepted(self):
         commands = [
-            'CREATE TABLE TableName',
+            'CREATE TBLE TableName',
             'CREATE TABLE TableName VALUES (ColumnName1,)',
         ]
 
