@@ -10,7 +10,7 @@ install_requires = [
 
 setup(
     name='json-database',
-    version='0.3.0',
+    version='0.3.1',
     author='Dmitri Chumak',
     author_email='tsudmi@ut.ee',
     url='https://github.com/tsudmi/json-database',
@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': ['json-database=json_database.command_line:main'],
     },
+    test_suite="json_database.tests",
     classifiers=[
         'Intended Audience :: Education',
         'Intended Audience :: Information Technology',
