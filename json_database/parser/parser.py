@@ -46,7 +46,7 @@ class CommandParser(DatabaseListener):
 
     def exitCreateStatement(self, ctx):
         table_name = ctx.getChild(1).getText()
-        if self.api.get_table(table_name):
+        if self.api.get_table(table_name) is not None:
             echo(style('Table with name %s already exists.' % table_name, fg='blue'))
         else:
             self.api.create_table(table_name)
