@@ -10,7 +10,7 @@ install_requires = [
 
 setup(
     name='json-database',
-    version='0.3.1',
+    version='0.4.0',
     author='Dmitri Chumak',
     author_email='tsudmi@ut.ee',
     url='https://github.com/tsudmi/json-database',
