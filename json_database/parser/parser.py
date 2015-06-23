@@ -19,6 +19,21 @@ def value_converter(value):
 
             return value.strip('"')
 
+def execute_operator(operator, value1, value2):
+    if operator == '=':
+        return value1 == value2
+    elif operator == '!=':
+        return value1 != value2
+    elif operator == '>':
+        return value1 > value2
+    elif operator == '<':
+        return value1 < value2
+    elif operator == '>=':
+        return value1 >= value2
+    elif operator == '<=':
+        return value1 <= value2
+    else:
+        return False
 
 class CommandParser(DatabaseListener):
     def __init__(self, database_path):
@@ -126,8 +141,9 @@ class CommandParser(DatabaseListener):
         elif isinstance(ctx, DatabaseParser.WhereANDContext):
             column = value_converter(ctx.getChild(0).getText())
             value = value_converter(ctx.getChild(2).getText())
+            operator = ctx.getChild(1).getText()
 
-            left = column in table_row.keys() and table_row[column] == value
+            left = column in table_row.keys() and execute_operator(operator, table_row[column], value)
             if ctx.getChildCount() >= 5:
                 right = self.is_acceptable(table_row, ctx.getChild(-1))
                 return left and right
