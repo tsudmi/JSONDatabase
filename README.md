@@ -21,14 +21,18 @@ Automata, Languages and Compilers course project
 ```
 
 ## Usage
-* Run database commands with **--c** paramater directly:
+* Run database commands with **--c** parameter directly:
 ```
     $ venv/bin/json-database --c 'SELECT * FROM Person'
 ```
-* Run database command with prompt:
+* Run database command from prompt:
 ```
     $ venv/bin/json-database
     Command: 'SELECT * FROM Person'
+```
+* Specify database path:
+```
+    $ venv/bin/json-database --d /path/to/the/database.json
 ```
 * Run database commands with provided script path:
 ```
@@ -37,7 +41,7 @@ Automata, Languages and Compilers course project
 
 ## Script example
 ```
--- This is script file example!!!
+-- This is example!
 CREATE TABLE Person;
 INSERT INTO Person SET Name="John", age=25, married=true;
 UPDATE Person SET age=28 WHERE Name="John";
