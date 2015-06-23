@@ -43,8 +43,12 @@ where
     ;
 
 whereAND
-    :   columnName '=' value 'AND' whereAND
-    |   columnName '=' value
+    :   columnName operator value 'AND' whereAND
+    |   columnName operator value
+    ;
+
+operator
+    :   '=' | '!=' | '>' | '<' | '>=' | '<='
     ;
 
 tableName
@@ -56,26 +60,30 @@ columnName
     ;
 
 NAME
-    :   [a-zA-Z] ([0-9a-zA-Z$_])+
+    :   [a-zA-Z] [0-9a-zA-Z$_]*
     ;
 
 value
     :   number
     |   boolean
-    |   string
+    |   STRING
     ;
 
-string
-    :   '"' ~'"' '"'
+STRING
+    :   '"' ~["\r\n]*? '"'
     ;
 
 number
-    : NUMBER
+    : INT
+    | FLOAT
     ;
 
-NUMBER
-    :   [1-9] [0-9]* ('.' [0-9]+)?
-    |   '0' ('.' [0-9]+)?
+INT
+    :   '-'? [1-9] [0-9]* ('.' [0-9]+)?
+    ;
+
+FLOAT
+    :   '-'? '0' ('.' [0-9]+)?
     ;
 
 boolean

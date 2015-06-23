@@ -94,6 +94,15 @@ class DatabaseListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by DatabaseParser#operator.
+    def enterOperator(self, ctx):
+        pass
+
+    # Exit a parse tree produced by DatabaseParser#operator.
+    def exitOperator(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by DatabaseParser#tableName.
     def enterTableName(self, ctx):
         pass
@@ -118,15 +127,6 @@ class DatabaseListener(ParseTreeListener):
 
     # Exit a parse tree produced by DatabaseParser#value.
     def exitValue(self, ctx):
-        pass
-
-
-    # Enter a parse tree produced by DatabaseParser#string.
-    def enterString(self, ctx):
-        pass
-
-    # Exit a parse tree produced by DatabaseParser#string.
-    def exitString(self, ctx):
         pass
 
 
